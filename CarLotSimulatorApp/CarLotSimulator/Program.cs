@@ -17,13 +17,16 @@ namespace CarLotSimulator
 
             //Now that the Car class is created we can instanciate 3 new cars
             Car subaru = new Car("Subaru", "Impreza", 2002, "Loud", "Low", false);
+            Console.WriteLine(CarLot.numberOfCars);
             carLot.Lot.Add(subaru);
 
             Car toyota = new Car() { Make = "Toyota", Model = "Camry", Year = 2002, EngineNoise = "Low", HonkNoise = "Low", IsDriveable = true };
+            Console.WriteLine(CarLot.numberOfCars);
             carLot.Lot.Add(toyota);
 
             //Set the properties for each of the cars
             Car porshe = new Car();
+            Console.WriteLine(CarLot.numberOfCars);
             porshe.Make = "Porshe";
             porshe.Model = "911 Turbo";
             porshe.Year = 2000;
